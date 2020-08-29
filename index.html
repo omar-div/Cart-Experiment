@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Third Exam !</title>
+  </head>
+  <body>
+
+<!-- --------------------Head-Menu-Bar----------------------------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- ---------Menu-Bar Logo---------- -->
+      <a href="#"><img src="./img/logo.png" alt="Logo"></a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Items
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Men's</a>
+                  <a class="dropdown-item" href="#">Women</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Children's</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Contact Us
+                </a>
+              </li>
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button type="button" class="btn btn-outline-danger my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">Show Cart</button>
+            </form>
+        </div>
+      </nav>
+<!--End --------------------Head-Menu-Bar----------------------------- -->
+
+
+     
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class=" modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title ml-auto mr-auto">
+          <img src="./img/L3.png" alt="">
+          <h4  id="staticBackdropLabel">Shoppin Cart</h4>
+        </div>
+        <div class="model-one">
+          <i class="fa fa-1x fa-print"></i>
+        </div>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+      <div class="modal-body">
+        <div id="mydata">
+        <table id="myTableData" class="table table-borderless table-dark" cellpadding="15">
+            <tr>
+                <td>&nbsp;</td>
+                <td><b>Product</b></td>
+                <td><b>Qty.</b></td>
+                <td><b>Rate</b></td>
+                <td><b>Total</b></td>
+            </tr>
+        </table>
+        
+        &nbsp;
+         
+        </div>
+        <div class="chart-button sub-model">
+         
+            <!-- --------Sub-Model PopUp--------- -->
+
+                <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+          + Add Item
+        </button>
+        <table id="myTableData" class="table table-borderless table-dark" cellpadding="15">
+            
+            <tr class="tr-border">
+                <!-- <td>&nbsp;</td> -->
+                <td><b>Sub-Total :</b></td>
+                <td><b></b></td>
+                <td>&nbsp;</td>
+                <td><b></b></td>
+            </tr>
+        </table>
+
+                        <!-- Modal -->
+                        <div class=" modal fade" id="exampleModal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog main-content">
+                            <div class="modal-content ml-auto mr-auto">
+                              <div class="modal-header ml-auto mr-auto">
+                                <h5 class="modal-title" id="exampleModalLabel">Add your product to Cart</h5>
+                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button> -->
+                              </div>
+                              <div class="modal-body ml-auto mr-auto model-two ">
+                              
+                                <form>
+                                  
+                                  <div id="myform">
+                                    <table id="table1">
+                                        <tr>
+                                            <th>Name:</th>
+                                            <td><select class="form-control form-control-sm" id="name" id="exampleFormControlSelect1">
+                                              <option>Choose Product</option>
+                                              <option>Shoes</option>
+                                              <option>Watch</option>
+                                              <option>Bag</option>
+                                              <option>Cap</option>
+                                            </select></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Qty.:</th>
+                                            <td><input type="number" id="qty" id="exampleFormControlSelect1">
+                                             
+                                            
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Rate:</th>
+                                            <td><input type="number" id="rate">    </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Price:</th>
+                                            <td ><input class="test" type="text" id="price">    </td>
+                                        </tr>
+                                        <tr >
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                     <!-- --------button--------- -->
+                                    <!-- <span type="button" id="add" value="Add" onclick="Javascript:addRow()">Add</span> -->
+                                    <!-- <span type="button" id="add" value="Add" onclick="test().value=''">Add</span> -->
+                                    </div>
+                                </form>
+                                
+
+                             </div>
+                              <div class="modal-footer">
+                               
+                                <button type="button" id="add" value="Add" onclick="Javascript:addRow()" class="btn btn-primary btn-sm">Add to Cart</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+<!--end --------Sub-Model PopUp--------- -->
+        </div>
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+        <!--End ------popup part------- -->
+
+<!-- header-cover-photo -->
+<div class="container">
+  <div class=" ">
+   <div class=" header-cover-photo">
+     <div class="left">
+         <h3>Mi LED TV 4A PRO 32</h3>
+         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+         <h2>$1289</h2>
+         <button type="button" class="btn btn-danger btn-sm my-2 my-sm-0">Buy Now <i class="fa fa-arrow-right"></i></button>
+     </div>
+     <div class="multy-image">
+         <img src="./img/tv.png" alt="Cover-Photo">
+         <!-- <img class="top" src="assets/image/led-tv.png" alt=""> -->
+     </div>
+   </div>
+  </div>
+</div>
+<!-- header-cover-photo End -->
+<div class="space30"></div>
+
+<!-- -------firtst Container Start------ -->
+
+<div class="container">
+  <div class="">
+    <div class=" first-container">
+        
+      <div class="category-box">
+          <h4>Watch</h4>
+          <img src="./img/watch.png" alt="Watch">
+      </div>
+      <div class="category-box">
+          <h4>Bag</h4>
+          <img src="./img/backpack-3.png" alt="Watch">
+      </div>
+      <div class="category-box">
+          <h4>Shoes</h4>
+          <img src="./img/soes-4.png" alt="Watch">
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- End -------firtst Container ------ -->
+                            <div class="space50"></div>
+<!-- ---------Product List Part-------------- -->
+<div class="container">
+  <div class="category-name">
+        <div class="row ">
+          <h4>Shoses</h4>
+          <h4 class="see-all">See All</h4> 
+        </div>
+          <br>
+          <hr>
+          <br>
+
+        <div class=" row product-box">
+          <div class="box">
+              <img src="./img/soes-1.png" alt="Shoses">
+              <h5>Reebok Dart Men's Shoes</h5>
+              <h6>Some quick example text to bild on the card title.</h6>
+              <p class="product-price">999</p>
+              <div class="probut">
+                <button class="product-button btn btn-outline-danger btn-sm my-2 my-sm-0">buy now</button>
+                <button type="button" class="btn btn-danger btn-sm my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">Cart</button>
+              </div>
+          </div>
+          <div class="box">
+              <img src="img/soes-3.png" alt="Shoses">
+              <h5>Reedok Pump</h5>
+              <h6>Some quick example text to bild on the card title.</h6>
+              <p class="product-price">799</p>
+              <div class="probut">
+                <button class="product-button btn btn-outline-danger btn-sm my-2 my-sm-0">buy now</button>
+                <button type="button" class="btn btn-danger btn-sm my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">Cart</button>
+              </div>
+          </div>
+          <div class="box">
+              <img src="img/soes-2.png" alt="Shoses">
+              <h5>Reebok All Terrain</h5>
+              <h6>Some quick example text to bild on the card title.</h6>
+              <p class="product-price">699</p>
+              <div class="probut">
+                <button class="product-button btn btn-outline-danger btn-sm my-2 my-sm-0">buy now</button>
+                <button type="button" class="btn btn-danger btn-sm my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">Cart</button>
+              </div>
+
+          </div>
+      </div>
+  </div>      
+
+  <div class="space50"></div>
+
+
+  <div class="category-name">
+        <div class="row ">
+          <h4>BackPack</h4>
+          <h4 class="see-all">See All</h4> 
+        </div>
+          <br>
+          <hr>
+          <br>
+
+        <div class=" row product-box">
+          <div class="box">
+              <img src="./img/backpack-1.png" alt="Shoses">
+                <h5>Ison Backpack</h5>
+                <h6>Some quick example text to bild on the card title.</h6>
+                <p class="product-price">999</p>
+              <div class="probut">
+                <button class="product-button btn btn-outline-danger btn-sm my-2 my-sm-0">buy now</button>
+                <button type="button" class="btn btn-danger btn-sm my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">Cart</button>
+              </div>
+          </div>
+          <div class="box">
+              <img src="img/backpack-2.png" alt="Shoses">
+              <h5>Biaowang Backpack</h5>
+              <h6>Some quick example text to bild on the card title.</h6>
+              <p class="product-price">2799</p>
+              <div class="probut">
+                <button class="product-button btn btn-outline-danger btn-sm my-2 my-sm-0">buy now</button>
+                <button type="button" class="btn btn-danger btn-sm my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">Cart</button>
+              </div>
+          </div>
+          <div class="box">
+              <img src="img/backpack-3.png" alt="Shoses">
+              <h5>Dxyizu ws54 Smart</h5>
+                <h6>Some quick example text to bild on the card title.</h6>
+                <p class="product-price">999</p>
+              <div class="probut">
+                <button class="product-button btn btn-outline-danger btn-sm my-2 my-sm-0">buy now</button>
+                <button type="button" class="btn btn-danger btn-sm my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop" onclick="Javascript:addRow()>Cart</button>
+              </div>
+
+          </div>
+      </div>
+  </div>      
+</div>
+
+
+
+    
+
+<!-- End---------Product List Part-------------- -->
+      
+    <!-- --------custom Java Script--------- -->
+    <script src="script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
